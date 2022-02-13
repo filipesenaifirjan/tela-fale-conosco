@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>--Tela login--</title>
+<meta charset="utf-8" />
+  <link href="naofale.css" rel="stylesheet" media="all" />
+    <script src="JavaScript1.js"></script>
+</head>
+
+<body>
+  <p>Dessa forma o vlibras é carregado!</p>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget("https://vlibras.gov.br/app");
+  </script>
+<form name="meu_form">
+
+  <h1>Faça seu login</h1>
+
+  <input type="text" id="nomeid" placeholder="Seu nome" required="required" name="nome" />
+  <label for="nome">Nome</label>
+
+  <input type="tel" id="foneid" placeholder="******" name=" telefone" />
+  <label for="telefone">Senha</label>
+
+  <input type="email" id="emailid" placeholder="seuemail@mail.com" name="email" />
+  <label for="email">Email</label>
+
+ 
+  <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
+</form>
+</body>
+</html>
